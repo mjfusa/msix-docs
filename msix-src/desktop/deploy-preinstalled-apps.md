@@ -43,7 +43,7 @@ In Windows 10 2004, a provisioned packaged app will reinstall during re-provisio
 
 ## PowerShell
 List of relevant PowerShell commands
-* **[Get-ProvisionedAppxPackages](/powershell/module/dism/get-appxprovisionedpackage?view=win10-ps)** This will list all of the apps that are pre-installed on the image.
+* **[Get-ProvisionedAppxPackage](/powershell/module/dism/get-appxprovisionedpackage?view=win10-ps)** This will list all of the apps that are pre-installed on the image.
 * **[Add-ProvisionedAppxPackage](/powershell/module/dism/add-appxprovisionedpackage?view=win10-ps)** This stages the appx package and configures it for pre-install. All dependencies must be provided as well, which can be found in the SDK or with store-downloaded packages.
 * **[Remove-ProvisionedAppxPackage](/powershell/module/dism/remove-appxprovisionedpackage?view=win10-ps)** This can be used to remove a pre-installed app. Note that it does not remove the app if it is already registered for any users - this only strips the auto-registration behavior so it will not be auto-installed for any new users.  If no users have yet installed the app, this command will also remove the staged files.
 
